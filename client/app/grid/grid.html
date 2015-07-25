@@ -1,0 +1,23 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>Grid View</h1>
+  </div>
+<!-- 
+      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+      <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" /> -->
+</header>
+
+<div class="container" >
+  <button ng-click="gridOptions.api.expandAll()">Expand All</button>
+  <button ng-click="gridOptions.api.collapseAll()">Collapse All</button>
+  <button ng-click="reloadDefs()">Reload Definitions</button>
+ <div ag-grid="gridOptions" class="ag-dark" style="height: 600px; width: auto;"></div>
+
+</div></div>
+
+<footer class="footer">
+  <div class="container">
+  </div>
+</footer>
+
