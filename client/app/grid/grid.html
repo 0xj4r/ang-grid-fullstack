@@ -1,7 +1,7 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 <header class="hero-unit" id="banner">
   <div class="container">
-    <h1>Grid View</h1>
+    <h1>Super Secret New Grid View App</h1>
   </div>
 <!-- 
       <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
@@ -12,6 +12,8 @@
   <button ng-click="gridOptions.api.expandAll()">Expand All</button>
   <button ng-click="gridOptions.api.collapseAll()">Collapse All</button>
   <button ng-click="reloadDefs()">Reload Definitions</button>
+  <input placeholder="Filter..." type="text" ng-model="gridOptions.quickFilterText"/>
+
  <div ag-grid="gridOptions" class="ag-dark" style="height: 600px; width: auto;"></div>
 
 </div></div>

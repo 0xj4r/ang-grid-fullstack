@@ -5,7 +5,29 @@ var express = require('express');
 var sql = require('mssql');
 
 
+exports.execute = function() {
 
+var conn_str = "Driver={SQL Server Native Client 10.0};Server=(local);Database=BossIBR;Trusted_Connection={Yes}";
+
+sql.open(conn_str, function (err, conn) { 
+if (err) { 
+    console.log("Database connection failed!"); 
+    return; 
+    } 
+                       
+    conn.queryRaw("SELECT * from Versions", function (err, results) { 
+    if (err) { 
+    console.log("Error running query!"); return; 
+    } 
+    for (var i = 0; i < results.rows.length; i++) 
+        { 
+    console.log("Id: " + results.rows[i][0] + " Name: " + results.rows[i][1]); 
+        } 
+    }); 
+}); 
+  
+
+}
 
 
 
@@ -22,10 +44,14 @@ var sql = require('mssql');
 exports.go = function(){
 	console.log("function Reached");
 	var config = { 
+	driver: 'msnodesql',
 	user: 'AMR\jransom', 
-	password: 'Mordillo??1446', 
-	server: 'JOSHSQL', 
+	password: '', 
+	server: 'localhost',
+	instance: 'JOSHSQL', 
 	database: 'BossIBR', 
+	trusted: 'YES',
+	connectionString: "Driver={SQL Server Native Client 11.0};Server={#{server}\\#{instance}};Database={#{database}};Uid={#{user}};Pwd={#{password}};Trusted_Connection={#{trusted}};",
 	pool: {
         max: 10,
         min: 0,

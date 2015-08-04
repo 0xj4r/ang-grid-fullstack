@@ -1,3 +1,8 @@
 {
-    "directory": "client/bower_components"
+    "directory": "client/bower_components",
+    "registry": "http://bower.herokuapp.com",
+"proxy": "http://proxy-us.intel.com:911",
+  "https-proxy": "http://proxy-us.intel.com:912", 
+  "strict-ssl": false
+
 }
