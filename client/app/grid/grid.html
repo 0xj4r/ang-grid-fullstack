@@ -1,25 +1,20 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
-<header class="hero-unit" id="banner">
+<!--<header class="hero-unit" id="banner">
   <div class="container">
-    <h1>Super Secret New Grid View App</h1>
+      <h1>Npi</h1>
   </div>
-<!-- 
-      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-      <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" /> -->
-</header>
 
-<div class="container" >
-  <button ng-click="gridOptions.api.expandAll()">Expand All</button>
-  <button ng-click="gridOptions.api.collapseAll()">Collapse All</button>
+      <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />-->
+      <!--<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" /> -->
+<!--</header>-->
+<div class="container" style="width: 100%;" >
+  <button ng-click="gridOptions.api.expandAll()"><span class="glyphicon glyphicon-resize-full"></span></button>
+  <button ng-click="gridOptions.api.collapseAll()"><span class="glyphicon glyphicon-resize-small"></span></button>
+  <button ng-click="updateGridData()"><span class="glyphicon glyphicon-refresh"></span></button>
   <button ng-click="reloadDefs()">Reload Definitions</button>
   <input placeholder="Filter..." type="text" ng-model="gridOptions.quickFilterText"/>
-
  <div ag-grid="gridOptions" class="ag-dark" style="height: 600px; width: auto;"></div>
-
-</div></div>
-
+ <div ag-grid="secOptions" class="ag-dark" style="height: 150px; width: auto;"></div>
 <footer class="footer">
-  <div class="container">
-  </div>
 </footer>
 

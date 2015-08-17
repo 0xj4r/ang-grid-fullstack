@@ -2,10 +2,15 @@
 
 angular.module('fullGridApp')
   .controller('NavbarCtrl', function ($scope, $location, Auth) {
-    $scope.menu = [{
-      'title': 'Home',
+    $scope.menu = [
+      {
+      'title': 'Dashboard',
       'link': '/'
-    }];
+    },{
+      'title': 'Npi', 
+      'link': '/grid'
+     } 
+    ];
 
     $scope.isCollapsed = true;
     $scope.isLoggedIn = Auth.isLoggedIn;

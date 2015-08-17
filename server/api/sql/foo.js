@@ -1,3 +1,5 @@
 var test = require('./test.js');
 
-test.go(); 
+
+// test.queries(); 
+test.propel();
