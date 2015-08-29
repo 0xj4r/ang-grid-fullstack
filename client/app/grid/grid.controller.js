@@ -164,6 +164,11 @@ $scope.updateRows = [];
             alert("Unsuccesful fetching data for NPI tab." + JSON.stringify(data)); 
         });
         
+        // Hides and shows the tool panel
+        $scope.toggleToolPanel = function() {
+            $scope.gridOptions.api.showToolPanel(!$scope.gridOptions.showToolPanel); 
+            $scope.gridOptions.showToolPanel = !$scope.gridOptions.showToolPanel;
+        }
         
         //Refresh the data
         $scope.updateGridData = function() {
@@ -179,17 +184,6 @@ $scope.updateRows = [];
                     alert("Unsuccesful fetching data for NPI tab." + JSON.stringify(data)); 
                 });
         }
-        
-          // var tempArr = []; 
-            // for (var key in data[1][0]) {
-            //     var newColumn = {
-            //         headerName: key, 
-            //         field: key, 
-            //         width: 100
-            //     }; 
-            //     tempArr.push(newColumn);
-            // }
-            // console.log(JSON.stringify(tempArr));
         
     // Update rows in server.      
     $scope.saveChanges = function() {
