@@ -1,0 +1,31 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+<div class="jumbotron">
+	<!--<div class="container">-->
+		<h1 style="text-align: center;">Propel Solution Comparison</h1>
+	<!--</div>-->
+</div>
+<div class="container">
+
+	<table style="width: 100%; font-weight: bold;font-size: 20px;border-width:3px;" class="table table-bordered">
+		<tr>
+			<th style="text-align: center;">Solution</th>
+			<th style="text-align: center; background: #dff0d8">Pro</th>
+			<th style="text-align: center; background: #f2dede">Con</th>
+		</tr>
+		<tr ng-repeat="each in proConList">
+			<td style="text-align: center;">{{each.solution}}</td>
+			<td style="background: #dff0d8">
+				<ul>
+					<li ng-repeat="pro in each.pros">{{pro}} </li>
+				</ul>
+			</td>
+			<td style="background: #f2dede">
+				<ul>
+					<li ng-repeat="con in each.cons">{{con}} </li>
+				</ul>
+			</td>
+
+		</tr>
+	</table>
+
+</div>
