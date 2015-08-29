@@ -9,6 +9,9 @@ angular.module('fullGridApp')
     },{
       'title': 'Npi', 
       'link': '/grid'
+     } , {
+      'title': 'Comparison', 
+      'link': '/comparison'
      } 
     ];
 
