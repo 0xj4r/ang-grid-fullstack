@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="./controller.js"></script>
+<body>
+	<div ng-app="myApp" ng-controller="myCtrl">
+	
+	<div class="jumbotron">
+	<!--<div class="container">-->
+		<h1 style="text-align: center;">Propel Solution Comparison</h1>
+	<!--</div>-->
+</div>
+<div class="container">
+
+	<table style="width: 100%; font-weight: bold;font-size: 20px;border-width:3px;" class="table table-bordered">
+		<tr>
+			<th style="text-align: center;">Solution</th>
+			<th style="text-align: center; background: #dff0d8">Pro</th>
+			<th style="text-align: center; background: #f2dede">Con</th>
+		</tr>
+		<tr ng-repeat="each in proConList">
+			<td style="text-align: center;">{{each.solution}}</td>
+			<td style="background: #dff0d8">
+				<ul>
+					<li ng-repeat="pro in each.pros">{{pro}} </li>
+				</ul>
+			</td>
+			<td style="background: #f2dede">
+				<ul>
+					<li ng-repeat="con in each.cons">{{con}} </li>
+				</ul>
+			</td>
+
+		</tr>
+	</table>
+
+</div>
+</div>
+
+</body>
+</html>
