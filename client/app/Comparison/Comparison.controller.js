@@ -65,7 +65,7 @@ angular.module('fullGridApp')
                 "Live debugging, deployment and editing"
             ], 
             cons: [ 
-                "Our org has less experience with the new technology"
+                "Our org has less experience with the  technology"
             ]
         }
     ]
