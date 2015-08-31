@@ -11,7 +11,7 @@ app.controller('myCtrl', function ($scope) {
                 "Technology has been around for a long time"
             ], 
             cons: [
-                "No design patterns and therefore is difficult to make improvements", 
+                "No project design patterns implemented and therefore is difficult to make improvements", 
                 // "Bad design strategies", 
                 "Requires Farpoint licensing", 
                 // "Poor Performance",  show actual performance metrics
