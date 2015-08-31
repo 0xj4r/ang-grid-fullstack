@@ -26,7 +26,7 @@ exports.index = function(req, res) {
 	mssql.connect(config, function(err) {
 		if (err) console.log(err); 
 	var request = new mssql.Request(); 
-	request.execute('usp_GetNPIData', function(err, recordsets, returnValue) {
+	request.execute('usp_GetNPIDataDemo', function(err, recordsets, returnValue) {
 		if(err) console.log(err);
     else {
       return res.json(200, recordsets)

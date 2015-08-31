@@ -2,7 +2,7 @@
 
 angular.module('fullGridApp')
   .controller('ComparisonCtrl', function ($scope) {
-     
+      
     $scope.proConList = [
         {
             solution: "Current", 
@@ -19,7 +19,7 @@ angular.module('fullGridApp')
                 "Does not have code deployment", 
                 "Does not have documentation of how the current system works", 
                 "Is not extensible", 
-                "Project are not organized logically", 
+                "Project is not organized logically", 
                 "Does not easily integrate with other existing modules and technologies",  
                 "Technology has become stale",
                 "Has not been built to be tested", 
