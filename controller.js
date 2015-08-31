@@ -11,7 +11,7 @@ app.controller('myCtrl', function ($scope) {
                 "Technology has been around for a long time"
             ], 
             cons: [
-                "Little knowledge of design and therefore difficult to make improvements", 
+                "No design patterns and therefore is difficult to make improvements", 
                 // "Bad design strategies", 
                 "Requires Farpoint licensing", 
                 // "Poor Performance",  show actual performance metrics
@@ -21,7 +21,6 @@ app.controller('myCtrl', function ($scope) {
                 "Is not extensible", 
                 "Project is not organized logically", 
                 "Does not easily integrate with other existing modules and technologies",  
-                "Technology has become stale",
                 "Has not been built to be tested", 
                 "Does not have test integration"
             ]
@@ -38,7 +37,7 @@ app.controller('myCtrl', function ($scope) {
                 "Took 35 hours to create a barely working demo",
                 "Lives on client machine", 
                 "Slow Development", 
-                "Relies on expensive licensing", 
+                "Requires infragistics licensing", 
                 "Requires completed replication of existing application code to add new applications", 
                 "Code and applications are not well documented", 
                 "Has not been built to be tested", 
