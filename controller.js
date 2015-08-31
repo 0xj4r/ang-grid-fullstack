@@ -11,6 +11,7 @@ app.controller('myCtrl', function ($scope) {
                 "Technology has been around for a long time"
             ], 
             cons: [
+                "Inconsistent load times and can often take over 30 seconds", 
                 "No project design patterns implemented and therefore is difficult to make improvements", 
                 // "Bad design strategies", 
                 "Requires Farpoint licensing", 
@@ -29,6 +30,7 @@ app.controller('myCtrl', function ($scope) {
         {
             solution: "ISA", 
             pros: [
+                "Loads grid with data in 6-10 seconds",
                 "Uses in house developed framework that the org has already invested in", 
                 "Centralized solution", 
                 "Technology has been around for a long time"
@@ -52,6 +54,8 @@ app.controller('myCtrl', function ($scope) {
         {
             solution: "Node and Angular", 
             pros: [
+                "Loads grid with data in ~2 seconds",
+                "Can utilize pagination and data caching to greatly improve user experience",
                 "Took only 16 hours to implement better working demo", 
                 "Helps developers stay engaged while remaining marketable", 
                 "Modular ecosystem allowing for easy reuse of components", 
